@@ -1,20 +1,14 @@
 <template>
-  <Button @click="showDialog = true">Open Dialog</Button>
-  <Dialog title="Title" v-model="showDialog"> Dialog content </Dialog>
+  <Badge>Bismillah</Badge>
 </template>
 
 <script>
-import { Dialog } from 'frappe-ui'
+import { Badge } from 'frappe-ui'
 
 export default {
   name: 'Home',
-  data() {
-    return {
-      showDialog: false,
-    }
-  },
   components: {
-    Dialog,
+    Badge,
   },
 }
 </script>
