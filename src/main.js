@@ -4,11 +4,19 @@ import { createApp } from 'vue'
 import router from './router'
 import App from './App.vue'
 
-import { Button } from 'frappe-ui'
+import { Button, Badge, FrappeUI } from 'frappe-ui/src'
+
+let globalComponents = {
+  Badge,
+}
 
 let app = createApp(App)
 
+app.use(FrappeUI)
 app.use(router)
 
-app.component('Button', Button)
+for (let key in globalComponents) {
+	app.component(key, globalComponents[key])
+}
+
 app.mount('#app')
