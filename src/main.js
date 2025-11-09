@@ -1,13 +1,13 @@
 import './index.css'
 
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import router from './router'
 import App from './App.vue'
 
-import { Button, Badge, FrappeUI } from 'frappe-ui/src'
+import {Button, Badge, FrappeUI} from 'frappe-ui/src'
 
 let globalComponents = {
-  Badge,
+	Badge,
 }
 
 let app = createApp(App)

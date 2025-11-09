@@ -1,9 +1,9 @@
 <template>
-  <FrappeUIProvider>
-    <div>
-      <router-view />
-    </div>
-  </FrappeUIProvider>
+	<FrappeUIProvider>
+		<div>
+			<router-view/>
+		</div>
+	</FrappeUIProvider>
 </template>
 
 
